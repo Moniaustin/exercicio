@@ -1,9 +1,12 @@
 @charset "utf-8";
 * {margin: 0px;padding: 0px;}
 
+
 body {
-    background-color: #E9D460;
+    background-color: #FFE1E1;
 }
+
+
 
 .leftbtn{
     width: 3em;
@@ -11,8 +14,11 @@ body {
     background-color: white;
     outline-style: none;
     border-style: none;
-    margin-left: 20em;
+    margin-left: 25em;
     margin-right: 2em;
+    z-index: 99;
+    position: relative;
+    border: 1px;
 }
 
 .leftbtn:hover {
@@ -26,7 +32,9 @@ body {
     background-color: white;
     outline-style: none;
     border-style: none;
-/*    margin-top: 50em;*/
+    z-index: 99;
+    position: relative;
+    margin-top: 55em;
 }
 
 .rightbtn:hover {
@@ -34,17 +42,106 @@ body {
     cursor: pointer;
 }
 
+
+
+.leftbtn:hover {
+   background-color: pink;
+    color: white;
+}
+
+.rightbtn:hover {
+   background-color: pink;
+    color: white;
+}
+
+
 .img1 {
     width: 600px;
     height: 600px;
     float: right;
-    margin-right: 5em;
-    margin-top: 4em;
+    margin-left: 40em;
+    margin-top: 2.5em;
+    display: block;
+    -webkit-animation-name: moveimg;
+    opacity: 1;
+    animation-name: moveimg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
-.text {
+
+@-webkit-keyframes moveimg {
+   from {
+       transform: translateX(100%);
+       opacity: 0;
+   }
+   to {
+       transform: translateX(0%);
+       opacity: 1;
+   }
+}
+
+
+.txtbox {
     background-color: white;
     width: 20em;
-    height: 10em;
-    margin-top: 5em;
+    height: 20em;
+    margin-top: 15em;
+    margin-left: 5em;
+    position: absolute;
+    display: block;
+}
+
+.link {
+    color: pink;
+    font-weight: 100;
+}
+
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: #3B3B3A;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: -3em;
+    -webkit-animation-name: movetxt;
+    opacity: 1;
+    animation-name: movetxt;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+@-webkit-keyframes movetxt {
+   from {
+       transform: translateY(-100%);
+       opacity: 0;
+   }
+   to {
+       transform: translateY(0%);
+       opacity: 1;
+   }
+}
+
+
+.mySlides {
+    position: absolute;
+    overflow: hidden;
+}
+
+.mySlides .slide {
+    position: absolute;
+    transition: opacity 300ms;
+}
+
+.mySlides .slide .active {
+    opacity: 1;
+    animation-name: moveimg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }

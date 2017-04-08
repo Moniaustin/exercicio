@@ -1,34 +1,82 @@
 <!DOCTYPE HTML>
-<html lang="">
+<html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <title>My Slideshow</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+    </style>
 </head>
+
+<body>
+    <div class="bgcolor">
+        <ul class="w3-content w3-display-container">
+            <li class="mySlides">
+                <div><img class="img1" src="image/img1.jpg"></div>
+                
+                <div class="txtbox">
+                   
+                    <h1>The intensity of the colours is also related to the light and shows how the combination of these elements can help create a greater illusion of space.<br><br><span class="link">Ricardo Bofill</span></h1></div>
+                    
+            </li>
+            
+            <li class="mySlides">
+               
+                <div><img class="img1" src="image/img2.jpg"></div>
+                <div class="txtbox">
+                   
+                    <h1>The intensity of the colours is also related to the light and shows how the combination of these elements can help create a greater illusion of space.<br><br><span class="link">Ricardo Bofill</span></h1></div>
+                    
+            </li>
     
-<body> 
-<div class="bgcolor">
-
-
-
-<div class="w3-content w3-display-container">
-
-  <li class="mySlides">
-    <div>
-     <div><img class="img1" src="image/seis.jpg"></div>
-     <div class="text"><h1>Hello Yellow Allô!</h1></div>
-     </div>
-      
-  </li>
-  <li class="mySlides"><img class="img1" src="image/seis2.jpg"></li>
-
-
-  <button class="leftbtn" onclick="plusDivs(-1), change(), fadein(body)">&#10094;</button>
-  <button class="rightbtn" onclick="plusDivs(1), change(), fadein(body)">&#10095;</button>
-</div>
-</div>
-    <script src="jscript/jquery-3.1.1.min.js"></script>
+              <li class="mySlides">
+               
+                <div><img class="img1" src="image/img3.jpg"></div>
+                
+                <div class="txtbox">
+                   
+                    <h1>Pastel-colored constructions with impressive dimensions that are accentuated by the angle given to the clichés.<br><br><span class="link">Oliver Wainwright</span></h1></div>
+                    
+                </li>
+                
+                <li class="mySlides">
+                <div><img class="img1" src="image/img4.jpg"></div>
+                <div class="txtbox">
+                   
+                    <h1>Pastel-colored constructions with impressive dimensions that are accentuated by the angle given to the clichés.<br><br><span class="link">Oliver Wainwright</span></h1></div>
+                    
+                </li>
+                
+                <li class="mySlides">
+               
+                <div><img class="img1" src="image/img5.jpg"></div>
+                
+                <div class="txtbox">
+                   
+                    <h1>Marrakech was the last stop on our European trip in October. We originally planned to visit for 10 days.<br><br><span class="link">Monica Austin</span></h1></div>
+                    
+                </li>
+                
+                <li class="mySlides">
+                <div><img class="img1" src="image/img6.jpg"></div>
+                <div class="txtbox">
+                   
+                    <h1>Marrakech was the last stop on our European trip in October. We originally planned to visit for 10 days<br><br><span class="link">Monica Austin</span></h1></div>
+                    
+                </li>
+       
+       
+        </ul>
+    </div>
+    
+    <button class="leftbtn" onclick="plusDivs(-1), change(), changetxtboxtorandomsize()">&#10094;</button>
+    <button class="rightbtn" onclick="plusDivs(1), change(), changetxtboxtorandomsize()">&#10095;</button>
+    
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/scripts.js"></script>
-    
 </body>
+
 </html>
